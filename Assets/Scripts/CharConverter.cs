@@ -1,89 +1,281 @@
 using UnityEngine;
 
-public class CharConverter : MonoBehaviour 
+public class CharConverter : MonoBehaviour
 {
-    public KeyCode CharToKeyCode(char character)
+	public static KeyCode CharToKeyCode(char character)
 	{
-        switch(character){
-            'a':{
+		switch(character)
+		{
+			case('a'):
+			{
                 return KeyCode.A;
+				break;
             }
-            'b':{
+            case('b'):
+			{
                 return KeyCode.B;
+				break;
             }
-			'c':{
+			case('c'):
+			{
 				return KeyCode.C;
+				break;
 			}
-			'd':{
+			case('d'):
+			{
 				return KeyCode.D;
+				break;
 			}
-			'e':{
+			case('e'):
+			{
 				return KeyCode.E;
+				break;
 			}
-			'f':{
+			case('f'):
+			{
 				return KeyCode.F;
+				break;
 			}
-			'g':{
+			case('g'):
+			{
 				return KeyCode.G;
+				break;
 			}
-			'h':{
+			case('h'):
+			{
 				return KeyCode.H;
+				break;
 			}
-			'i':{
+			case('i'):
+			{
 				return KeyCode.I;
+				break;
 			}
-			'j':{
+			case('j'):
+			{
 				return KeyCode.J;
+				break;
 			}
-			'k':{
+			case('k'):
+			{
 				return KeyCode.K;
+				break;
 			}
-			'l':{
+			case('l'):
+			{
 				return KeyCode.L;
+				break;
 			}
-			'm':{
+			case('m'):
+			{
 				return KeyCode.M;
+				break;
 			}
-			'n':{
+			case('n'):
+			{
 				return KeyCode.N;
+				break;
 			}
-			'o':{
+			case('o'):
+			{
 				return KeyCode.O;
+				break;
 			}
-			'p':{
+			case('p'):
+			{
 				return KeyCode.P;
+				break;
 			}
-			'q':{
+			case('q'):
+			{
 				return KeyCode.Q;
+				break;
 			}
-			'r':{
+			case('r'):
+			{
 				return KeyCode.R;
+				break;
 			}
-			's':{
+			case('s'):
+			{
 				return KeyCode.S;
+				break;
 			}
-			't':{
+			case('t'):
+			{
 				return KeyCode.T;
+				break;
 			}
-			'u':{
+			case('u'):
+			{
 				return KeyCode.U;
+				break;
 			}
-			'v':{
+			case('v'):
+			{
 				return KeyCode.V;
+				break;
 			}
-			'w':{
+			case('w'):
+			{
 				return KeyCode.W;
+				break;
 			}
-			'x':{
+			case('x'):
+			{
 				return KeyCode.X;
+				break;
 			}
-			'y':{
+			case('y'):
+			{
 				return KeyCode.Y;
+				break;
 			}
-			'z':{
+			default:
+			{
 				return KeyCode.Z;
 			}
-            //...and so on until you hit Z. I'm not really sure how we'd want to handle capitalization here, but this should get close enough.
-        }
-    }
+			//...and so on until you hit Z. I'm not really sure how we'd want to handle capitalization here, but this should get close enough.
+		}
+	}
+
+	public static bool CapitalCharToKeyCode(char character)
+	{
+		switch(character)
+		{
+			case('A'):
+			{
+                return true;
+				break;
+            }
+            case('B'):
+			{
+                return true;
+				break;
+            }
+			case('C'):
+			{
+				return true;
+				break;
+			}
+			case('D'):
+			{
+				return true;
+				break;
+			}
+			case('E'):
+			{
+				return true;
+				break;
+			}
+			case('F'):
+			{
+				return true;
+				break;
+			}
+			case('G'):
+			{
+				return true;
+				break;
+			}
+			case('H'):
+			{
+				return true;
+				break;
+			}
+			case('I'):
+			{
+				return true;
+				break;
+			}
+			case('J'):
+			{
+				return true;
+				break;
+			}
+			case('K'):
+			{
+				return true;
+				break;
+			}
+			case('L'):
+			{
+				return true;
+				break;
+			}
+			case('M'):
+			{
+				return true;
+				break;
+			}
+			case('N'):
+			{
+				return true;
+				break;
+			}
+			case('O'):
+			{
+				return true;
+				break;
+			}
+			case('P'):
+			{
+				return true;
+				break;
+			}
+			case('Q'):
+			{
+				return true;
+				break;
+			}
+			case('R'):
+			{
+				return true;
+				break;
+			}
+			case('S'):
+			{
+				return true;
+				break;
+			}
+			case('T'):
+			{
+				return true;
+				break;
+			}
+			case('U'):
+			{
+				return true;
+				break;
+			}
+			case('V'):
+			{
+				return true;
+				break;
+			}
+			case('W'):
+			{
+				return true;
+				break;
+			}
+			case('X'):
+			{
+				return true;
+				break;
+			}
+			case('Y'):
+			{
+				return true;
+				break;
+			}
+			case('Z'):
+			{
+				return true;
+			}
+			default:
+			{
+				return false;
+			}
+		}
+	}
 }

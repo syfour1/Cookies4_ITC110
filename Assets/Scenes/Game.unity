@@ -464,7 +464,7 @@ Transform:
   m_GameObject: {fileID: 748698187}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.3, y: -1.9648, z: 0}
+  m_LocalPosition: {x: 77.6, y: -1.9648, z: 0}
   m_LocalScale: {x: 4.0325, y: 3.6704, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -527,23 +527,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!1 &814308435 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4950032166511064971, guid: 5c643e646bdc175428433e2e5125df5b, type: 3}
-  m_PrefabInstance: {fileID: 5733746845752051272}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &814308441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 814308435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1a08895ebabfb754db23a88afd735388, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1932426360
 GameObject:
   m_ObjectHideFlags: 0
@@ -921,19 +904,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7319446890956965451, guid: 5c643e646bdc175428433e2e5125df5b, type: 3}
+      propertyPath: moveSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319446890956965451, guid: 5c643e646bdc175428433e2e5125df5b, type: 3}
       propertyPath: wordThing
       value: 
-      objectReference: {fileID: 814308441}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 8181064630210697995, guid: 5c643e646bdc175428433e2e5125df5b, type: 3}
       insertIndex: -1
       addedObject: {fileID: 724001106}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4950032166511064971, guid: 5c643e646bdc175428433e2e5125df5b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 814308441}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c643e646bdc175428433e2e5125df5b, type: 3}
 --- !u!1001 &7841997558155013792
 PrefabInstance:

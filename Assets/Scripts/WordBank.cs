@@ -6,15 +6,17 @@ public class WordBank : MonoBehaviour
 {
 	private List<string> originalWords = new List<string>()
 	{
-		"Pancakes", "Are", "Delicious", "But", "You", "Should", "Not", "Eat", "Them", "Every", "Day"
+		"Pancakes", "Are", "Delicious", "But", "You", "Should", "Not", "Eat", "Them", "Every", "Day", "This", "Is", "Not", "New", "News", "How", "Come", "You", "Never", "Knew", "This", "Well",
 	};
 	
 	private List<string> workingWords = new List<string>();
 	
+	private int iterator = 0;
+	
 	private void Awake()
 	{
 		workingWords.AddRange(originalWords);
-		Shuffle(workingWords);
+		//Shuffle(workingWords);
 		ConverToLower(workingWords);
 	}
 	
@@ -42,8 +44,9 @@ public class WordBank : MonoBehaviour
 		
 		if(workingWords.Count != 0)
 		{
-			newWord = workingWords.Last();
+			newWord = workingWords[iterator];
 			workingWords.Remove(newWord);
+			//iterator++;
 		}
 		return newWord;
 	}

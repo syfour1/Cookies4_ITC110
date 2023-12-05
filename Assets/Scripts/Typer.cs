@@ -50,8 +50,10 @@ public class Typer : MonoBehaviour
 		{
 			RemoveLetter();
 			
-			if (IsWordComplete())
+			if (IsWordComplete()){
 				SetCurrentWord();
+				GameObject.Find("Racer#1").GetComponent<SideScrollerPlayer>().MovePlayer();
+			}
 		}
 	}
 	
